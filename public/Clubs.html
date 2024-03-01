@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Clubs / University of Adelaide Clubs Finding Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/65e4e23476.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a href="home.html">
+        <img src="images/Logo.png" alt="Website Logo" height="90px">
+        </a>
+        <h1>My Clubs</h1>
+        <input type="text" name="search" class="top-searchbar" placeholder="Search for clubs and posts">
+        <div class="login-button" onclick="window.location.href='login.html'">
+            <span class="login-button-icon"><i class="fa-solid fa-right-to-bracket" style="color: #f7f7f7;"></i></span>
+            Login
+        </div>    
+    </header>
+    <!--everything below the header/topnav-->
+    <div class="container">
+        <div class="container-left-sidebar">
+            <!---left side - navigation buttons-->
+
+            <div class="left-sidebar-menu" style="position: fixed;">
+                <a href="home.html" style="text-decoration: none;">
+                <div class="left-sidebar-menu-item" href="home.html">
+                    <span class="left-sidebar-menu-icon"><i class="fa-solid fa-house"></i></span>
+                    Home
+                </div>
+                </a>
+                <a href="Profiles.html" style="text-decoration: none;">
+                <div class="left-sidebar-menu-item">
+                    <span class="left-sidebar-menu-icon"><i class="fa-solid fa-user"></i></span>
+                    Profile
+                </div>
+                </a>
+                <a href="Clubs.html " style="text-decoration: none;">
+                <div class="left-sidebar-menu-item active-menu-item">
+                    <span class="left-sidebar-menu-icon"><i class="fa-solid fa-users"></i></span>
+                    My Clubs
+                </div>
+                </a>
+                <a href="Events.html" style="text-decoration: none;">
+                    <div class="left-sidebar-menu-item">
+                        <span class="left-sidebar-menu-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                        Events
+                    </div>
+                    </a>
+                <a href="AdminPage.html" style="text-decoration: none;">
+                <div class="left-sidebar-menu-item">
+                    <span class="left-sidebar-menu-icon"><i class="fa-solid fa-lock"></i></span>
+                    Administration
+                </div>
+                </a>
+            </div>
+        </div>
+        <main class="container-main-content">
+            <section class="my-clubs-filter">
+                <h1>My Clubs:</h1>
+                <div class="club-search-box">
+                    <label class="search-label" for="filter">Search:</label>
+                    <input class="filter" placeholder="Search club by name..." type="text">
+                </div>
+            </section>
+            <section class="clubs-list">
+                <div class="filtered-list">
+                    <div class="club-box">
+                        <a href="Club.html" class="my-clubs-club-logo">
+                            <img width="200" height="200" src="images/csclub.png" alt="a club logo" class="images">
+                        </a>
+                        <div class="details-and-join">
+                            <a href="Club.html">Computer Science Club</a>
+                        </div>
+                        <button class="join-leave-button" type="button">Leave</button>
+                    </div>
+                    <div class="club-box">
+                        <a href="Club.html" class="my-clubs-club-logo">
+                            <img width="200" height="200" src="images/csclub.png" alt="a club logo" class="images">
+                        </a>
+                        <div class="details-and-join">
+                            <a href="Club.html">Universe of Adelaide Engineering Club</a>
+                        </div>
+                        <button class="join-leave-button" type="button">Leave</button>
+                    </div>
+                    <div class="club-box">
+                        <a href="Club.html" class="my-clubs-club-logo">
+                            <img width="200" height="200" src="images/csclub.png" alt="a club logo" class="images">
+                        </a>
+                        <div class="details-and-join">
+                            <a href="Club.html">Third Club</a>
+                        </div>
+                        <button class="join-leave-button" type="button">Leave</button>
+                    </div>
+                </div>
+            </section>
+            <section class="all-clubs-filter" style="margin:24px 0 24px 0;">
+                <h1>All Clubs:</h1>
+                <div class="club-search-box">
+                    <label class="search-label" for="filter">Search:</label>
+                    <input class="filter" placeholder="Search club by name..." type="text">
+                </div>
+            </section>
+            <section class="clubs-list" style="padding: 25px 0;">
+                <div class="filtered-list">
+                    <div class="club-box">
+                        <a href="Club.html" class="my-clubs-club-logo">
+                            <img width="200" height="200" src="images/csclub.png" alt="a club logo" class="images">
+                        </a>
+                        <div class="details-and-join">
+                            <a href="Club.html">Computer Science Club</a>
+                        </div>
+                        <button class="join-leave-button" type="button">Join</button>
+                    </div>
+                    <div class="club-box">
+                        <a href="Club.html" class="my-clubs-club-logo">
+                            <img width="200" height="200" src="images/csclub.png" alt="a club logo" class="images">
+                        </a>
+                        <div class="details-and-join">
+                            <a href="Club.html">Universe of Adelaide Engineering Club</a>
+                        </div>
+                        <button class="join-leave-button" type="button">Join</button>
+                    </div>
+                    <div class="club-box">
+                        <a href="Club.html" class="my-clubs-club-logo">
+                            <img width="200" height="200" src="images/csclub.png" alt="a club logo" class="images">
+                        </a>
+                        <div class="details-and-join">
+                            <a href="Club.html">Third Club</a>
+                        </div>
+                        <button class="join-leave-button" type="button">Leave</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+         <div class="container-right-sidebar">
+            <!---right side - notifications sidebar-->
+
+            <div class="right-sidebar-content" style="position: fixed;">
+                Right Sidebar
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

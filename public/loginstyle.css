@@ -1,0 +1,124 @@
+html, body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(151, 191, 223);
+  }
+  
+  header {
+    top: 0;
+    background-color: #FAF1E7;
+    border-top: 3px solid #267da0;
+    position: fixed;
+    width: 100%;
+    padding: 6px 12px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  .login-wrapper {
+    padding: 12px;
+    width: 500px;
+    height: 440px;
+    border: 3px solid #267da0;
+    background-color: #FAF1E7;
+    border-radius: 20px;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .login-wrapper form {
+    width: 100%;
+    margin: 10px 0px 40px 0px;
+  }
+  
+  .form-input {
+    margin: 30px 0;
+  }
+  
+  .forgot-prompt {
+    margin: 15px 0 15px 0;
+  }
+  
+  .forgot-prompt a {
+    text-decoration: none;
+  }
+  
+  .forgot-prompt a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-button {
+    width: 100%;
+    height: 50px;
+    background-color: #267da0;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .signin-prompt a {
+    text-decoration: none;
+  }
+  
+  .signin-prompt a:hover {
+    text-decoration: underline;
+  }
+
+  .forgot-password-wrapper {
+    padding: 12px;
+    width: 500px;
+    height: 440px;
+    border: 3px solid #267da0;
+    background-color: #FAF1E7;
+    border-radius: 20px;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .form-box {
+    width: 100%;
+    margin: 10px 0px 40px 0px;
+  }
+  
+  .form-input {
+    margin: 30px 0;
+  }
+  
+  .login-button,
+  .reset-button {
+    width: 100%;
+    height: 50px;
+    background-color: #267da0;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .signin-prompt a {
+    text-decoration: none;
+  }
+  
+  .signin-prompt a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styles specific to login box */
+  .login-wrapper h2 {
+    margin-top: 0;
+  }
+  
+  /* Styles specific to forgot password */
+  .forgot-password-wrapper h2 {
+    margin-top: 0;
+  }

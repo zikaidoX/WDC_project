@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head lang="en">
+<title>University of Adelaide Clubs Finding Service</title>
+<link rel="stylesheet" href="loginstyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/65e4e23476.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="javascripts/page.js"></script>
+</head>
+<body>
+    <!--- use this to comment---->
+    <header>
+        <a href="home.html">
+            <img src="images/Logo.png" alt="Website Logo" height="90px">
+        </a>
+        <h1>Welcome - Find and connect to clubs in The University of Adelaide!</h1>
+    </header>
+    <div class="login-wrapper">
+        <div class="form-box signup">
+            <h2>Sign-up</h2>
+            <form action="/signup" method="post">
+                <div class="form-input">
+                    <i class="fa-solid fa-user fa-fw"></i><input type="text" required id="signup-firstname" placeholder="First Name">
+                </div>
+                <div class="form-input">
+                    <i class="fa-solid fa-user fa-fw"></i><input type="text" required id="signup-lastname" placeholder="Last Name">
+                </div>
+                <div class="form-input">
+                <i class="fa-solid fa-envelope fa-fw"></i><input type="email" required id="signup-email" placeholder="Email">
+                </div>
+                <div class="form-input">
+                <i class="fa-solid fa-lock fa-fw"></i><input type="password" required id="signup-pass" placeholder="Password">
+                </div>
+                <div class="form-input">
+                    <i class="fa-solid fa-lock fa-fw"></i><input type="password" required id="signup-confirm" placeholder="Confirm Password">
+                </div>
+            </form>
+            <button type="button" onclick="signUp()" class="login-button">Sign Up</button>
+            
+            <div class="signin-prompt">
+                <p>Already have an account? <a href="Login.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+</body>

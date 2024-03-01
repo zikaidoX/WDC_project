@@ -1,0 +1,303 @@
+html,
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+
+}
+
+/*header - top part of site */
+
+header {
+  top: 0;
+  background-color: #FAF1E7;
+  border-top: 3px solid #267da0;
+  position: fixed;
+  width: 100%;
+  padding: 6px 12px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+header h1 {
+  width: 200px;
+  font-size: 32px;
+  padding: 30px;
+  margin-left: 50px;
+  display: block;
+}
+
+header .top-searchbar {
+  width: 300px;
+  height: 25px;
+  margin: 10px;
+  padding-left: 10px;
+  border-radius: 3em;
+}
+
+header button {
+  margin-left: 100px;
+  float: right;
+}
+
+.login-button {
+  width:100px;
+  padding:6px;
+  border-radius: 6px;
+  float: right;
+  background-color: #267da0;
+  color:white;
+  margin-left: 100px;
+}
+
+.login-button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.login-button-icon {
+  margin-right: 12px;
+}
+
+/* container css implementation - divide pages into sections*/
+.container {
+  display: flex;
+  margin: 105px auto auto auto;
+}
+
+.container-left-sidebar {
+  width: 25%;
+}
+
+
+.container-main-content {
+  width: 50%;
+  border-right: solid 1px #267da0;
+}
+
+.container-right-sidebar {
+  width: 25%;
+}
+
+
+/* left sidebar css implementation*/
+.left-sidebar-menu {
+  position: fixed;
+  /* prevents movement when scrolling in main*/
+  background-color: #FAF1E7;
+  height: 100%;
+}
+
+.left-sidebar-menu-icon {
+  height: 20px;
+  margin-right: 20px
+}
+
+.left-sidebar-menu-item {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  border: solid 3px black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.left-sidebar-menu-item:hover {
+  background-color: #72929e;
+  cursor: pointer;
+}
+
+.active-menu-item {
+  color: #267da0;
+  border: solid 3px #267da0;
+}
+
+.active-menu-item .left-sidebar-menu-icon {
+  color: #267da0;
+}
+
+
+/* right sidebar css implementation*/
+.right-sidebar-content {
+  position: fixed;
+}
+
+/* middle div implementation*/
+.container-main-content {
+  padding-top: 6px;
+  padding-bottom: 24px;
+}
+
+
+/*when sceen is smaller
+
+
+/* my clubs page + Admin page css implementation */
+
+.clubs-list {
+  display: flex;
+  margin: 24px 0 24px 0;
+}
+
+.users-list {
+  display: flex;
+  margin: 24px 0 24px 0;
+}
+
+.club-box a {
+  color: black;
+}
+
+.user-box a {
+  color: black;
+}
+
+.filter {
+  width: 85%;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.images {
+  height: 100px;
+  width: 100px;
+  border-radius: 10%;
+  border-style: solid;
+}
+
+.club-box {
+  width: 150px;
+  height: 200px;
+  border-radius: 10%;
+  border-style: solid;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 20px;
+  float: left;
+}
+
+.user-box {
+  width: 150px;
+  height: 200px;
+  border-radius: 10%;
+  border-style: solid;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 20px;
+  float: left;
+}
+
+.filtered-list {
+  border: 3px solid #fff;
+  padding: 10px;
+  margin: 10px;
+}
+
+.join-leave-button {
+  border-radius: 15%;
+  border-style: solid;
+}
+
+.manage-button {
+  border-radius: 15%;
+  border-style: solid;
+}
+
+.all-clubs-filter {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.my-user-filter {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+/*post div css implementation */
+.post {
+  width: 90%;
+  margin-top: 50px;
+  border: 1px solid #267da0;
+}
+
+.post-header {
+  padding: 12px 6px 6px 6px;
+  display: flex;
+  align-items: center;
+}
+
+.post-content {
+  padding: 6px;
+}
+
+.post-time {
+  margin: 12px 0 12px 6px;
+}
+
+.post-reactions {
+  margin: 12px 0 12px 6px;
+  display: flex;
+}
+
+.reaction-icon {
+  padding: 6px 6px 6px 0;
+}
+
+.post-reaction-button {
+  width: 150px;
+  border: 1px solid black;
+  margin-right: 12px;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.post-reaction-button:hover {
+  border: 1px solid #267da0;
+  color: #267da0;
+  cursor: pointer;
+}
+
+.post-reaction-reply {
+  padding: 6px 6px 6px 6px;
+}
+
+/*user/club profile styles */
+.profile-content {
+  margin: 30px 0 30px 0;
+}
+
+.profile-details {
+  display:flex;
+  align-items: center;
+}
+
+.profile-details img {
+  width:100px;
+  height: 100px;
+  border: 5px solid black;
+  margin-right: 12px;
+}
+
+.edit-button {
+  margin: 12px 0 12px 0;
+  padding:6px;
+  border-radius: 6px;
+  color: white;
+  width:100px;
+  background-color: #267da0;
+}
+
+.edit-button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.edit-button-icon {
+  margin-right: 6px;
+}

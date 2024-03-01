@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home / University of Adelaide Clubs Finding Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/65e4e23476.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="javascripts/page.js" defer></script>
+</head>
+
+<body onload="getPosts()">
+    <header>
+        <a href="home.html">
+            <img src="images/Logo.png" alt="Website Logo" height="90px">
+        </a>
+        <h1>Home</h1>
+        <input type="text" name="search" class="top-searchbar" placeholder="Search for clubs and posts">
+        <div class="login-button" onclick="window.location.href='login.html'">
+            <span class="login-button-icon"><i class="fa-solid fa-right-to-bracket" style="color: #f7f7f7;"></i></span>
+            Login
+        </div>
+    </header>
+    <!--everything below the header/topnav-->
+    <div class="container">
+        <aside class="container-left-sidebar">
+            <!---left side - navigation buttons-->
+
+            <div class="left-sidebar-menu" style="position: fixed;">
+                <a href="home.html" style="text-decoration: none;">
+                <div class="left-sidebar-menu-item active-menu-item" href="home.html">
+                    <span class="left-sidebar-menu-icon"><i class="fa-solid fa-house"></i></span>
+                    Home
+                </div>
+                </a>
+                <a href="Profiles.html" style="text-decoration: none;">
+                <div class="left-sidebar-menu-item">
+                    <span class="left-sidebar-menu-icon"><i class="fa-solid fa-user"></i></span>
+                    Profile
+                </div>
+                </a>
+                <a href="Clubs.html " style="text-decoration: none;">
+                <div class="left-sidebar-menu-item">
+                    <span class="left-sidebar-menu-icon"><i class="fa-solid fa-users"></i></span>
+                    My Clubs
+                </div>
+                </a>
+                <a href="Events.html" style="text-decoration: none;">
+                    <div class="left-sidebar-menu-item">
+                        <span class="left-sidebar-menu-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                        Events
+                    </div>
+                </a>
+                <a href="AdminPage.html" style="text-decoration: none;">
+                <div class="left-sidebar-menu-item">
+                    <span class="left-sidebar-menu-icon"><i class="fa-solid fa-lock"></i></span>
+                    Administration
+                </div>
+                </a>
+            </div>
+        </aside>
+        <!--Home main content - list of posts from clubs-->
+        <div class="container-main-content">
+            <div class="post" v-for="post in posts">
+                <div class="post-header">
+                    <img width="80" height="80" src="images/csclub.png" alt="a club logo" class="post-logo" style="border: solid 1px black;">
+                    <a href="Club.html" class="post-club-name" style="margin-left: 16px;"><h2> {{ post.club_name }} </h2></a>
+                </div>
+                <div class="post-content">
+                    <p> {{ post.content}} </p>
+                </div>
+                <span class=post-time>Posted on: {{ (new Date(post.created)).toLocaleString() }}</span>
+                <div class="post-footer">
+                    <div class="post-reactions">
+                        <div class="post-reaction-button like"><span class="reaction-icon"><i class="fa-solid fa-heart"></i></span>Like</div>
+                        <div class="post-reaction-button comment"><span class="reaction-icon"><i class="fa-solid fa-comment"></i></span>Comment</div>
+                        <div class="post-reaction-button seereplies"><span class="reaction-icon"><i class="fa-solid fa-comment"></i></span>See Replies</div>
+                    </div>
+                    <div class="reply-input">
+                        <textarea placeholder="Reply to this post..." maxlength="200" rows="3" style="width: 95%; padding:6px; margin: 6px; resize:none;"></textarea>
+                    </div>
+                    <div class="post-reaction-reply">
+                        <div class="post-reaction-button reply"><span class="reaction-icon"><i class="fa-solid fa-paper-plane-top"></i></span>Reply</div>
+                    </div>
+                </div>
+            </div>
+            <!---What a typical club post looks like, place in router or vue to get a list of posts
+            <div class="post">
+                <div class="post-header">
+                    <img width="80" height="80" src="images/csclub.png" alt="a club logo" class="post-logo" style="border: solid 1px black;">
+                    <a href="Club.html" class="post-club-name" style="margin-left: 16px;"><h2>Club Name</h2></a>
+                </div>
+                <div class="post-content">
+                    <p>The content of a typical club post. Please style the post. Also this shouldn't be hard coded into the page and instead incremented using a router or vue</p>
+                </div>
+                <span class=post-time>Posted on: May 20 2023</span>
+                <div class="post-footer">
+                    <div class="post-reactions">
+                        <div class="post-reaction-button like"><span class="reaction-icon"><i class="fa-solid fa-heart"></i></span>Like</div>
+                        <div class="post-reaction-button comment"><span class="reaction-icon"><i class="fa-solid fa-comment"></i></span>Comment</div>
+                        <div class="post-reaction-button seereplies"><span class="reaction-icon"><i class="fa-solid fa-comment"></i></span>See Replies</div>
+                    </div>
+                    <div class="reply-input">
+                        <textarea placeholder="Reply to this post..." maxlength="200" rows="3" style="width: 95%; padding:6px; margin: 6px; resize:none;"></textarea>
+                    </div>
+                    <div class="post-reaction-reply">
+                        <div class="post-reaction-button reply"><span class="reaction-icon"><i class="fa-solid fa-paper-plane-top"></i></span>Reply</div>
+                    </div>
+                </div>
+            </div> -->
+
+         </div>
+         <div class="container-right-sidebar">
+            <!---right side - notifications sidebar-->
+
+            <div class="right-sidebar-content" style="position: fixed;">
+                right sidebar where notifications should be
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
